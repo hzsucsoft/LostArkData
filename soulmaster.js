@@ -1,22 +1,21 @@
 module.exports = {
   soulmaster: {
     s_1: {
-      skill_name: " Destruction Force",
+      skill_name: "这个是技能名称",
       cd: "16",
       description:
-        "Rushes 4m in front you and damages the enemy. Summons a destructive force to the caster’s hand, then detonates it, dealing [ ] damage to the enemy twice. Performs a final blow which deals [ ]. The final blow deals 100% increased damage to the enemies in the air ",
-      additional_effects: "Back Attack",
+        "这个是技能说明",
       time: "",
       icon: "8b48202438f3b1ae8760a062df209f58.png",
       tripod_lvl1: {
         e_1: {
-          effect_name: "Improved Endurance",
-          description: "Reduces force consumption by 20% ",
+          effect_name: "二级技能名称",
+          description: "二级技能说明",
           icon: "0.png"
         },
         e_2: {
-          effect_name: "Superior Mobility",
-          description: "Increases the movement distance by 2m ",
+          effect_name: "注意改中文一定要在引号里面，不能破坏结构",
+          description: "改完了就滚动到下面提交",
           icon: "0.png"
         },
         e_3: {
