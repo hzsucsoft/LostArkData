@@ -1,103 +1,95 @@
 module.exports = {
   warlord: {
     s_1: {
-      skill_name: "Sharp Spear",
+      skill_name: "锋利之矛",
       cd: "8",
-      description: "Strongly stab forward with the spear to inflict x damage ",
-      additional_effects: "Incapacitate [Low],Back Attack",
+      description: "使用锋利之矛向前猛刺，造成X点伤害 ",
+      additional_effects: "背后攻击，使其瘫痪",
       time: "",
       icon: "TbUnNwV.png",
       tripod_lvl1: {
         e_1: {
-          effect_name: "Quick Preparation",
-          description: "Decreases skill cooldown by 2s   ",
+          effect_name: "快速准备",
+          description: "技能CD减少2秒   ",
           icon: "DXzNTSi.png"
         },
         e_2: {
-          effect_name: "Damage increased",
-          description: "Increases damage by 15% ",
+          effect_name: "伤害增加",
+          description: "伤害提升15% ",
           icon: "DI0jbqj.png"
         },
         e_3: {
-          effect_name: "Attack speed",
-          description: "Increase attack speed by 20% ",
+          effect_name: "攻击速度",
+          description: "攻击速度提升20% ",
           icon: "9VyE0qU.png"
         }
       },
       tripod_lvl2: {
         e_1: {
-          effect_name: "Piercing",
-          description:
-            "On hit, decrease target`s Defense by 20% for 5s, and inflict Bleed status ",
+          effect_name: "冲锋",
+          description: "冲锋使目标防御力降低20%，持续5秒，并造成流血状态 ",
           icon: "ktJIUvL.png"
         },
         e_2: {
-          effect_name: "Vulnerable Target",
-          description:
-            "Damage is increased by 60% when used against a target under crowd control effects ",
+          effect_name: "易伤",
+          description: "群控效果中对目标造成伤害提升60% ",
           icon: "HWuM5x7.png"
         },
         e_3: {
-          effect_name: "Multi-Strike",
-          description:
-            "Stabs your spear three times in front of you, but the damage of each strike is decreased by 50% ",
+          effect_name: "多重打击",
+          description: "向前方猛刺三次，逐次伤害减少50% ",
           icon: "SPgHuhl.png"
         }
       },
       tripod_lvl3: {
         e_1: {
-          effect_name: "Concentrated Strike",
+          effect_name: "充能攻击",
           description:
-            "This skill can be charged multiple times. Each charge level adds extra attacks that deal an additional 50%, 100%, or 250% damage. Charging the skill increases its cooldown by 16 seconds ",
+            "可对技能进行充能，每次充能可造成50%、100%、250%点额外伤害，技能CD增加16秒",
           icon: "dgg9J9i.png"
         },
         e_2: {
-          effect_name: "Improved Stabbing",
-          description:
-            "Increases the number of attacks by 1. The damage dealt is increased by 50 ",
+          effect_name: "进阶之刺",
+          description: "增加1次攻击，造成伤害提高50点 ",
           icon: "32F9lxY.png"
         }
       },
       type: "Tap"
     },
     s_2: {
-      skill_name: "Rising Spear",
+      skill_name: "崛起之矛",
       cd: "12",
-      description:
-        "Strikes a spear into the ground, dealing [ ] damage. Pull out the spear to lift enemies in front of you",
+      description: "将长毛刺入地面并造成[x]点伤害.拔出长矛击飞敌人",
       additional_effects: ["Incapacitate [medium]", "Back Attack"],
       type: ["Tap"],
       time: [""],
       icon: "MrAZpAV.png",
       tripod_lvl1: {
         e_1: {
-          effect_name: "Defense Preparation",
-          description:
-            "Successful hits grant a 20% damage reduction bonus for 4 seconds",
+          effect_name: "防御姿态",
+          description: "被击中则获得20%伤害减免加成，持续4秒",
           icon: "SfUebeR.png"
         },
         e_2: {
-          effect_name: "Attack speed",
-          description: "Increases attack speed by 15%",
+          effect_name: "攻击速度",
+          description: "攻击速度提升15%",
           icon: "9VyE0qU.png"
         },
         e_3: {
-          effect_name: "Damage increased",
-          description: "Increases damage done by 10%",
+          effect_name: "伤害增加",
+          description: "伤害提升10%",
           icon: "DI0jbqj.png"
         }
       },
       tripod_lvl2: {
         e_1: {
-          effect_name: "Backstep Bombardment",
-          description:
-            "Performs a bombardment instead of an upward strike, which pushes the player backwards. The bombardment deals an additional 30% damage and lifts enemies",
-          icon: ""
+          effect_name: "反向轰击",
+          description: "向身后轰击推动自身，对目标造成30%额外击退伤害",
+          icon: "0.png"
         },
         e_2: {
-          effect_name: "Way of Fire",
-          description:
-            "Immediately fires a launcher at lifted enemies and burns them",
+          effect_name: "点燃",
+          description: "点燃目标",
           icon: "cXMAUIN.png"
         },
         e_3: {
@@ -109,205 +101,189 @@ module.exports = {
       },
       tripod_lvl3: {
         e_1: {
-          effect_name: "Toughness",
-          description:
-            "The caster becomes invulnerable to crowd control effects while performing the skill",
+          effect_name: "坚韧",
+          description: "释放技能时无法被群控",
           icon: "6vzVrvN.png"
         },
         e_2: {
-          effect_name: "Spot Weakness",
+          effect_name: "虚弱覆盖",
           description:
-            "Reduces attack speed, but the area of effect is increased by 30%. Damage is increased by 80% and knocks back enemies. Skill cooldown is increased by 2 seconds",
+            "技能范围增大30%，伤害提升80%并击退目标，攻击速度降低，技能CD增加2秒",
           icon: "nws09aw.png"
         }
       }
     },
     s_3: {
-      skill_name: "Fire Bullet",
+      skill_name: "近身打击",
       cd: "10",
-      description:
-        "Fires the cannon attached to your weapon, damaging an enemy within short range  ",
-      additional_effects: "Incapacitate [medium],Back Attack",
+      description: "发射大炮攻击近身目标  ",
+      additional_effects: "打断攻击",
       time: "",
       icon: "4wX9VGX.png",
       tripod_lvl1: {
         e_1: {
-          effect_name: "Improved Armor",
-          description:
-            "Gain a 20%  damage reduction bonus while performing the skill     ",
+          effect_name: "进阶护甲",
+          description: "增加20%伤害减免     ",
           icon: "SfUebeR.png"
         },
         e_2: {
-          effect_name: "Lucky Chance",
-          description:
-            "Successful hits have a 50%  chance to reduce the skill cooldown by 4 seconds     ",
+          effect_name: "幸运",
+          description: "击中目标有50%几率降低技能CD4秒     ",
           icon: "DXzNTSi.png"
         },
         e_3: {
-          effect_name: "Mind Enhancement",
-          description: "Decrease MP consumption by 50%      ",
+          effect_name: "智力",
+          description: "减少50%MP消耗      ",
           icon: "2RbMnoo.png"
         }
       },
       tripod_lvl2: {
         e_1: {
-          effect_name: "Destruction",
-          description: "Increases destruction level by 1  ",
-          icon: ""
+          effect_name: "破坏",
+          description: "破坏等级提高1点  ",
+          icon: "0.png"
         },
         e_2: {
-          effect_name: "Flammable",
-          description: "Burns your target  ",
+          effect_name: "点燃",
+          description: "点燃目标  ",
           icon: "cXMAUIN.png"
         },
         e_3: {
-          effect_name: "Damage increased",
-          description: "Increases damage by 25%   ",
+          effect_name: "伤害增加",
+          description: "伤害提升25%   ",
           icon: "hbiDGfp.png"
         }
       },
       tripod_lvl3: {
         e_1: {
-          effect_name: "Aggressive Opportunity",
-          description:
-            "Fires the cannon twice.  Each shot deals an additional 50%. Additionally, your target is pushed back further  ",
+          effect_name: "积极",
+          description: "大炮发射两次，每次额外50%几率，并击退目标 ",
           icon: "32F9lxY.png"
         },
         e_2: {
-          effect_name: "Concentrated Shelling",
+          effect_name: "虚弱覆盖",
           description:
-            "Reduces attack speed but increases damage dealt by 80%. Also increases the area of effect by 30%  and cooldown by 2 seconds  ",
+            "技能范围增大30%，伤害提升80%并击退目标，攻击速度降低，技能CD增加2秒 ",
           icon: "bjbQ0Fr.png"
         }
       },
       type: "Tap"
     },
     s_4: {
-      skill_name: "Shield Slam",
+      skill_name: "盾击",
       cd: "16",
-      description:
-        "Slams your shield into an enemy, dealing [] damage. Can be used a second time [ ] immediately afterwards",
+      description: "使用盾牌对目标造成 [x]点伤害. 再次使用造成[x]点伤害",
       additional_effects: ["Incapacitate [high]"],
       type: ["Combo"],
       time: [""],
       icon: "DwB8YCC.png",
       tripod_lvl1: {
         e_1: {
-          effect_name: "Unstoppable",
-          description:
-            "Successful hits have a 20% chance to reset the cooldown",
+          effect_name: "势不可挡",
+          description: "攻击目标有20%几率重置技能冷却时间",
           icon: "DXzNTSi.png"
         },
         e_2: {
-          effect_name: "Defensive Preparation",
-          description:
-            "Landing two successful hits grants a 20% damage reduction bonus for 5 seconds",
+          effect_name: "防御姿态",
+          description: "被击中则获得20%伤害减免加成，持续5秒",
           icon: "SfUebeR.png"
         },
         e_3: {
-          effect_name: "Attack speed",
-          description: "Increase attack speed by 15%",
+          effect_name: "攻击速度",
+          description: "攻击速度提升15%",
           icon: "9VyE0qU.png"
         }
       },
       tripod_lvl2: {
         e_1: {
-          effect_name: "Gear Destruction",
-          description:
-            "Landing two successful hits reduces the enemy’s attack power and defense by 20% for 5 seconds",
+          effect_name: "破坏",
+          description: "攻击使目标攻击力和防御力降低20%，持续5秒",
           icon: "2JPSkpi.png"
         },
         e_2: {
-          effect_name: "Superior Mobility",
-          description: "Increases the skill range of the first hit by 1m",
+          effect_name: "机动",
+          description: "增加首次命中技能范围1米",
           icon: "DLz43Zq.png"
         },
         e_3: {
-          effect_name: "Spot Weakness",
-          description:
-            "Increases damage done any target with the Invulnerable status by 60%",
+          effect_name: "狂暴",
+          description: "无敌状态下对目标造成伤害提升60%",
           icon: "a5qp6Tt.png"
         }
       },
       tripod_lvl3: {
         e_1: {
-          effect_name: "Extra Hit",
-          description:
-            "Increases the number of hits by 2. The additional hits deal 20% and 60% extra damage",
+          effect_name: "额外命中",
+          description: "命中增加2，额外造成20%-60%伤害",
           icon: "hXBL5OK.png"
         },
         e_2: {
-          effect_name: "Flashbang",
-          description:
-            "You can use the shield bash three times, and damage is increased by 30%. It stuns enemy on the last hit",
+          effect_name: "击晕",
+          description: "盾击3次，伤害增加30%，最后一击击晕目标",
           icon: "dgg9J9i.png"
         }
       }
     },
     s_5: {
-      skill_name: "Bash",
+      skill_name: "眩晕",
       cd: "10",
-      description:
-        "Strikes an enemy with your shield for [ ] and stuns it for 3 seconds. ",
+      description: "盾击对目标造成3秒眩晕状态",
       additional_effects: "Incapacitate [Mid-High]",
       time: "",
       icon: "eemdICW.png",
       tripod_lvl1: {
         e_1: {
-          effect_name: "Damage increased",
-          description: "Increases damage by 15%    ",
+          effect_name: "伤害增加",
+          description: "伤害提升15%   ",
           icon: "DI0jbqj.png"
         },
         e_2: {
-          effect_name: "Attack speed",
-          description: "Increase attack speed by 20%    ",
+          effect_name: "攻击速度",
+          description: "攻击速度提升20%    ",
           icon: "9VyE0qU.png"
         },
         e_3: {
-          effect_name: "Blitz Bash",
-          description:
-            "25%  chance to inflict 50%  more damage to your target   ",
+          effect_name: "痛击",
+          description: "25%几率使目标受到的伤害提高50%   ",
           icon: "HR5NqtN.png"
         }
       },
       tripod_lvl2: {
         e_1: {
-          effect_name: "Attack Preparation",
-          description:
-            "Successful hits grant a 25%  damage increase buff for 5 seconds   ",
+          effect_name: "攻击姿态",
+          description: "击中目标伤害增加25%，持续5秒   ",
           icon: "AFgfZrT.png"
         },
         e_2: {
-          effect_name: "Incapacitate",
-          description: "Increases incapacitate point by 20%    ",
+          effect_name: "无力",
+          description: "破坏能力提升 20%    ",
           icon: "cimRspI.png"
         },
         e_3: {
-          effect_name: "Armor Destruction",
-          description:
-            "Successful hits reduce the enemy’s defense by 30%  for 6 seconds   ",
+          effect_name: "破甲",
+          description: "击中目标防御力降低30%，持续6秒   ",
           icon: "ktJIUvL.png"
         }
       },
       tripod_lvl3: {
         e_1: {
-          effect_name: "Strike",
-          description: "Increases the area of effect by 30%    ",
+          effect_name: "覆盖",
+          description: "技能范围增加30%    ",
           icon: "bjbQ0Fr.png"
         },
         e_2: {
-          effect_name: "Echo",
-          description: "Increases the stun effect duration by 2 seconds   ",
+          effect_name: "回响",
+          description: "使目标眩晕持续时间增加2秒   ",
           icon: "0BMcHYE.png"
         }
       },
       type: "Tap"
     },
     s_6: {
-      skill_name: "Dash Upper Fire",
+      skill_name: "冲天击",
       cd: "16",
       description:
-        "Rushes to a foe and lifts the target, dealing [ ] damage, then follows with a combo attack, firing a cannon that deals [] damage. Inflicts an additional [] damage to targets in the air",
+        "冲击目标，击飞造成[]伤害，大炮造成[]伤害，对空中目标造成额外[]伤害",
       additional_effects: [
         "Incapacitate [Mid-High]",
         " Destruction [Level 1]",
@@ -318,291 +294,269 @@ module.exports = {
       icon: "WZpkynC.png",
       tripod_lvl1: {
         e_1: {
-          effect_name: "Quick Preparation",
-          description: "Decreases skill cooldown by 3 seconds",
+          effect_name: "快速准备",
+          description: "技能CD减少3秒",
           icon: "DXzNTSi.png"
         },
         e_2: {
-          effect_name: "Defensive Preparation",
-          description:
-            "Successful hits grant a 20% damage reduction bonus for 4 seconds",
+          effect_name: "防御姿态",
+          description: "被击中则获得20%伤害减免加成，持续4秒",
           icon: "SfUebeR.png"
         },
         e_3: {
-          effect_name: "Offensive Preparation",
-          description:
-            "Successful hits grant a 15% damage bonus for 4 seconds.",
+          effect_name: "攻击姿态",
+          description: "击中目标则获得15%伤害加成，持续4秒",
           icon: "akITDDZ.png"
         }
       },
       tripod_lvl2: {
         e_1: {
-          effect_name: "Damage increased",
-          description: "Increases the cannon’s damage by 50%.",
+          effect_name: "伤害增加",
+          description: "加农炮伤害提升50%.",
           icon: "hbiDGfp.png"
         },
         e_2: {
-          effect_name: "Drillmaster",
-          description: "Increases the cannon’s area of effect by 20%",
+          effect_name: "覆盖",
+          description: "加农炮效果覆盖增加20%",
           icon: "SPgHuhl.png"
         },
         e_3: {
-          effect_name: "Penetration",
-          description: "The cannon ignores 50% of a foe’s defense",
+          effect_name: "无视",
+          description: "大炮无视目标50%防御力",
           icon: "ktJIUvL.png"
         }
       },
       tripod_lvl3: {
         e_1: {
-          effect_name: "Toughness",
-          description:
-            "The caster becomes Invulnerable to crowd control effects while performing the skill",
+          effect_name: "坚韧",
+          description: "释放技能时无法被群控",
           icon: "6vzVrvN.png"
         },
         e_2: {
-          effect_name: "Attack speed",
-          description: "Increases attack speed by 20%",
+          effect_name: "攻击速度",
+          description: "攻击速度提升20%",
           icon: "JMU1YLm.png"
         }
       }
     },
     s_7: {
-      skill_name: "Leap attack",
+      skill_name: "跳跃打击",
       cd: "16",
-      description:
-        "Leap high in the air towards a target location, and inflict [ ] damage to nearby foes upon landing ",
+      description: "跳跃至目标位置并造成 [ ]点伤害 ",
       additional_effects: "Incapacitate [medium]",
       time: "",
       icon: "11ue7yB.png",
       tripod_lvl1: {
         e_1: {
-          effect_name: "Damage increased",
-          description: "Increases damage by 10%   ",
+          effect_name: "伤害增加",
+          description: "伤害增加10%   ",
           icon: "DI0jbqj.png"
         },
         e_2: {
-          effect_name: "Drill Master",
-          description: "Increases the area of effect by 15% ",
+          effect_name: "覆盖",
+          description: "增加15%技能效果 ",
           icon: "rlevb4r.png"
         },
         e_3: {
-          effect_name: "Superior Mobility",
-          description: "Increases the skill range by 2m ",
+          effect_name: "机动",
+          description: "技能范围增加2米 ",
           icon: "frf2qov.png"
         }
       },
       tripod_lvl2: {
         e_1: {
-          effect_name: "Opportunity",
-          description:
-            "Changes the attack into a combo skill. After landing, you can fire your cannon at your target. This damage of this combo attack is increased by 50%. The skill also knocks the target back and pushes the caster backwards ",
+          effect_name: "位移打击",
+          description: "激活组合技，对目标伤害提升50%，并反向位移自身 ",
           icon: "cD0keDA.png"
         },
         e_2: {
-          effect_name: "Lesser Impact",
-          description:
-            "Changes the attack into a combo skill. The skill damage is decreased by 50%, but you can leap into the air one more time ",
+          effect_name: "龙之越",
+          description: "激活组合技，技能伤害降低50%并使自身跳起",
           icon: "KG9Q6Np.png"
         },
         e_3: {
-          effect_name: "Weakening Mobility",
-          description:
-            "Successful hits reduce your foes’ movement speed by 40% for 3 seconds ",
+          effect_name: "陷足",
+          description: "攻击使目标移动速度降低40%，持续3秒 ",
           icon: "C42y0cZ.png"
         }
       },
       tripod_lvl3: {
         e_1: {
-          effect_name: "Confident Team Member",
-          description:
-            "Grants party members at the target location a 50% damage reduction buff for 6 seconds ",
-          icon: ""
+          effect_name: "豁免",
+          description: "给予队友目标位置持续6秒的50%伤害减免",
+          icon: "0.png"
         },
         e_2: {
-          effect_name: "Shockwave",
-          description:
-            "Successful hits knock nearby targets down and lower their defense by 50% for 5 seconds ",
-          icon: ""
+          effect_name: "破甲",
+          description: "攻击降低目标50%防御率，持续5秒 ",
+          icon: "0.png"
         }
       },
       type: "Point"
     },
     s_8: {
-      skill_name: "Shield Slam",
+      skill_name: "谴责",
       cd: "12",
-      description:
-        "Slams your shield down and deals [] damage to nearby enemies. Decreases enemies movement and attack speed by 20%  for 4 seconds   ",
+      description: "盾牌攻击降低目标20%移动、攻击速度，持续4秒   ",
       additional_effects: "Incapacitate [medium]",
       time: "",
       icon: "LEtHD1y.png",
       tripod_lvl1: {
         e_1: {
-          effect_name: "Quick Preparation",
-          description: "Decreases skill cooldown by 3 seconds   ",
+          effect_name: "快速准备",
+          description: "减少技能CD3秒   ",
           icon: "DXzNTSi.png"
         },
         e_2: {
-          effect_name: "Attack speed",
-          description: "Increases attack speed by 10%    ",
+          effect_name: "攻击速度",
+          description: "攻击速度提升10%    ",
           icon: "9VyE0qU.png"
         },
         e_3: {
-          effect_name: "Eruption",
-          description: "Adds a 30%  chance to stun the target for 2 seconds   ",
+          effect_name: "暴脾气",
+          description: "有30%几率击晕目标2秒   ",
           icon: "ZkTpIPx.png"
         }
       },
       tripod_lvl2: {
         e_1: {
-          effect_name: "Drill Master",
-          description: "Increases the area of effect by 20%    ",
+          effect_name: "覆盖",
+          description: "技能范围增加20%    ",
           icon: "SPgHuhl.png"
         },
         e_2: {
-          effect_name: "Earthquake",
-          description:
-            "Nearby targets are inflicted by a 40%  movement speed and 20%  attack speed penalty   ",
+          effect_name: "震荡波",
+          description: "使目标移动速度降低40%，攻击速度降低20%   ",
           icon: "2JPSkpi.png"
         },
         e_3: {
-          effect_name: "Defensive Preparation ",
-          description:
-            "Successful hits grant a 15%  damage reduction bonus for 10 seconds   ",
+          effect_name: "防御姿态 ",
+          description: "被击中获得15%伤害减免，持续10秒",
           icon: "oVtc2zd.png"
         }
       },
       tripod_lvl3: {
         e_1: {
-          effect_name: "Second Wave",
+          effect_name: "无畏打击",
           description:
-            "The skill turns into chain skill that can be repeated immediately. The The second hit’s damage is increased by 100%    ",
+            "技能变为链技能，可以立即重复，第二次攻击伤害增加100%   ",
           icon: "Bybk6tw.png"
         },
         e_2: {
-          effect_name: "Assault",
-          description:
-            "The caster can leap through the air to a target location within 5m, and the skill damage is increased by 50%    ",
+          effect_name: "龙回头",
+          description: "从空中跳跃至5米内范围造成伤害提升50%   ",
           icon: "FpXyekj.png"
         }
       },
       type: "Tap"
     },
     s_9: {
-      skill_name: "Chain hook",
+      skill_name: "无情链钩",
       cd: "24",
-      description:
-        "Throws a chain hook to your target and deals [] damage, then pulls your target towards you and deals [] damage",
+      description: "向目标投掷链钩拉回造成 [] 点伤害",
       additional_effects: ["Incapacitate [low]"],
       type: ["Tap"],
       time: [""],
       icon: "SG0dbgp.png",
       tripod_lvl1: {
         e_1: {
-          effect_name: "Quick Preparation",
-          description: "Decreases skill cooldown by 4 seconds",
+          effect_name: "快速准备",
+          description: "技能CD减少4秒",
           icon: "DXzNTSi.png"
         },
         e_2: {
-          effect_name: "Mind Enhancement",
-          description: "Decrease MP consumption by 50%",
+          effect_name: "智力",
+          description: "减少50%MP消耗",
           icon: "2RbMnoo.png"
         },
         e_3: {
-          effect_name: "Damage increased",
-          description: "Increases damage by 10%",
+          effect_name: "伤害增加",
+          description: "伤害提升10%",
           icon: "DI0jbqj.png"
         }
       },
       tripod_lvl2: {
         e_1: {
-          effect_name: "Sharpened Chain Hook",
-          description: "Inflicts bleeding on the target for 5 seconds",
+          effect_name: "切割",
+          description: "使目标流血5秒",
           icon: "zHwYyaV.png"
         },
         e_2: {
-          effect_name: "Toughness ",
-          description:
-            "The caster becomes Invulnerable to crowd control effects while performing the skill",
+          effect_name: "坚韧 ",
+          description: "释放技能时无法被群控",
           icon: "a7DgAOn.png"
         },
         e_3: {
-          effect_name: "Offensive Preparation",
-          description:
-            "Successful hits grant a 20% damage increase for 6 seconds",
+          effect_name: "无畏",
+          description: "伤害提升20%，持续6秒",
           icon: "AFgfZrT.png"
         }
       },
       tripod_lvl3: {
         e_1: {
-          effect_name: "Drill Master",
-          description: "Increases the area of effect by 20%",
+          effect_name: "覆盖",
+          description: "技能范围增加20%",
           icon: "bjbQ0Fr.png"
         },
         e_2: {
-          effect_name: "Taunt",
-          description:
-            "A successful hit taunts a monster that has immunity of the crowd control effects for 2 seconds. Upper grade [seed grade] monsters cannot be taunted again for a certain duration of time",
+          effect_name: "嘲讽",
+          description: "强制嘲讽目标2秒，高级目标在一定时间内不可再次嘲讽",
           icon: "nws09aw.png"
         }
       }
     },
     s_10: {
-      skill_name: "Shield charge",
+      skill_name: "冲锋陷阵",
       cd: "16",
-      description:
-        "The caster raises their shield and charges forward. Each hit causes [ ] damage to foes and knocks them back ",
+      description: "使用盾牌向前冲锋将目标击退，并造成[]点伤害 ",
       additional_effects: "Incapacitate [high], Immune [stiffness]",
       type: "Hold",
       time: " 2 sec",
       icon: "R0rX5GV.png",
       tripod_lvl1: {
         e_1: {
-          effect_name: "Improved Armor",
-          description:
-            "Gain a 30% damage reduction bonus while you are performing the skill ",
+          effect_name: "进阶护甲",
+          description: "获得30%伤害减免 ",
           icon: "SfUebeR.png"
         },
         e_2: {
-          effect_name: "Quick Preparation",
-          description: "Decreases skill cooldown by 3 seconds ",
+          effect_name: "快速准备",
+          description: "技能CD减少3秒 ",
           icon: "DXzNTSi.png"
         },
         e_3: {
-          effect_name: "Damage increased",
-          description: "Increases damage by 15% ",
+          effect_name: "伤害增加",
+          description: "伤害提升15% ",
           icon: "DI0jbqj.png"
         }
       },
       tripod_lvl2: {
         e_1: {
-          effect_name: "Drill Master",
-          description: "Increases the area of effect by 20% ",
+          effect_name: "覆盖",
+          description: "技能范围增加20% ",
           icon: "SPgHuhl.png"
         },
         e_2: {
-          effect_name: "Toughness",
-          description:
-            "The caster becomes Invulnerable to crowd control effects while performing the skill ",
+          effect_name: "坚韧",
+          description: "释放技能时无法被群控",
           icon: "a7DgAOn.png"
         },
         e_3: {
-          effect_name: "Swift Step",
-          description: "Increases the charge speed by 20% ",
+          effect_name: "特斯拉",
+          description: "提升20%充能速度 ",
           icon: "LmuvcKG.png"
         }
       },
       tripod_lvl3: {
         e_1: {
-          effect_name: "Unfinished Business",
-          description:
-            "Thrust a spear after the shield charge, dealing 40% additional damage. The target is lifted into the air ",
+          effect_name: "势不可挡",
+          description: "盾牌冲锋刺入长矛，造成额外40%伤害，并将目标挑向空中 ",
           icon: "dgg9J9i.png"
         },
         e_2: {
-          effect_name: "Destructive Weapon",
-          description:
-            "Each hit grant a 10% damage bonus for 2 seconds. This bonus stacks up to 60% ",
-          icon: ""
+          effect_name: "破坏",
+          description: "每次攻击增加10%伤害，持续2秒，效果最高叠加到60% ",
+          icon: "0.png"
         }
       }
     },
@@ -620,182 +574,167 @@ module.exports = {
       icon: "5GxiOTq.png",
       tripod_lvl1: {
         e_1: {
-          effect_name: "Wound",
-          description: "A critical hit causes bleeding on your target.",
+          effect_name: "切割",
+          description: "致命一击会导致目标流血",
           icon: "1PceV71.png"
         },
         e_2: {
-          effect_name: "Devastating Strike",
-          description:
-            "Reduces the defense of targets with the Invulnerable status by 15% for 3 seconds",
+          effect_name: "克敌",
+          description: "3秒内减少目标在无敌状态下15%防御",
           icon: "QEd5bZU.png"
         },
         e_3: {
-          effect_name: "Improved Armor",
-          description:
-            "Gain a 20% damage reduction bonus while you are performing the skill",
+          effect_name: "进阶护甲",
+          description: "被击中获得20%伤害减免",
           icon: "SfUebeR.png"
         }
       },
       tripod_lvl2: {
         e_1: {
-          effect_name: "Improved Penetration",
-          description: "Increases the penetration level by 1",
+          effect_name: "穿透",
+          description: "增加1级穿透能力",
           icon: "NdeJndm.png"
         },
         e_2: {
-          effect_name: "Improved Charging",
-          description:
-            "Each level of the charging gauge increases the damage dealt by 10%",
+          effect_name: "磁脉充",
+          description: "每一级充能增加10%",
           icon: "hbiDGfp.png"
         },
         e_3: {
-          effect_name: "Toughness ",
-          description:
-            "The caster becomes Invulnerable to crowd control effects while performing the skill",
+          effect_name: "坚韧 ",
+          description: "释放技能时无法被群控",
           icon: "a7DgAOn.png"
         }
       },
       tripod_lvl3: {
         e_1: {
-          effect_name: "Lightning Charge",
-          description:
-            "The charging level starts at 2, and overcharging causes an electric shock to your target for 4 seconds",
+          effect_name: "超负荷",
+          description: "充电量2开始溢出充电会对目标造成4秒电击效果",
           icon: "JeryhMy.png"
         },
         e_2: {
-          effect_name: "The Last Charge",
-          description:
-            "Increases the maximum charging level by 1. At the maximum level, you travel faster, further, and deal 30% increased damage, followed by an artillery hit that also deals 30% increased damage",
+          effect_name: "急速打击",
+          description: "充能等级提高1级，满级效果伤害提升30%，炮击伤害提升30%",
           icon: "Bybk6tw.png"
         }
       }
     },
     s_12: {
-      skill_name: "Outcry",
+      skill_name: "听我号令",
       cd: "30",
-      description:
-        "Inflicts [ ] damage to a maximum of 12 enemies within 8m. This also taunts monsters for 2 seconds",
+      description: "8米范围内最多对12个目标造成[]点伤害并嘲讽2秒",
       additional_effects: [""],
       type: ["Tap"],
       time: [""],
       icon: "2Qdyzfj.png",
       tripod_lvl1: {
         e_1: {
-          effect_name: "Quick Preparation",
-          description: "Decreases skill cooldown by 3 seconds",
+          effect_name: "快速准备",
+          description: "技能CD减少3秒",
           icon: "DXzNTSi.png"
         },
         e_2: {
-          effect_name: "Drill Master",
-          description: "Increases the area of effect by 25%.",
+          effect_name: "覆盖",
+          description: "技能范围增加25%",
           icon: "rlevb4r.png"
         },
         e_3: {
-          effect_name: "Defense Preparation",
-          description: "Grants a 30% damage reduction bonus for 4 seconds",
+          effect_name: "防御姿态",
+          description: "被击中获得30%伤害减免，持续4秒",
           icon: "SfUebeR.png"
         }
       },
       tripod_lvl2: {
         e_1: {
           effect_name: "Intimidation",
-          description:
-            "Reduces the defense of targets struck by 30% for 4 seconds",
+          description: "降低目标30%防御力，持续4秒",
           icon: "ktJIUvL.png"
         },
         e_2: {
-          effect_name: "Natural Selection",
-          description:
-            "Increases the damage dealt on lower grade monsters by 200%",
+          effect_name: "神罚",
+          description: "低等级目标受到伤害提升200%",
           icon: "FtChNZ3.png"
         },
         e_3: {
-          effect_name: "Protective Shield",
-          description:
-            "Creates a protective shield for 3 seconds which absorbs up to 30% of the caster’s maximum health worth of damage",
-          icon: ""
+          effect_name: "护罩",
+          description: "制造持续3秒防护罩，最大吸收伤害30%",
+          icon: "0.png"
         }
       },
       tripod_lvl3: {
         e_1: {
-          effect_name: "Morale Boost",
-          description:
-            "Grants a 30% movement speed and attack power bonus for 4 seconds on you and party members within the skill range",
+          effect_name: "重整旗鼓",
+          description: "增加范围内队友30%移动速度和攻击强度，持续4秒",
           icon: "nGBwXyL.png"
         },
         e_2: {
-          effect_name: "Shout",
-          description:
-            "Reduces the movement speed and attack power of inflicted enemies by 30% for 4 seconds",
+          effect_name: "陷足",
+          description: "使目标移动速度和攻击强度降低30%，持续4秒",
           icon: "W94iICa.png"
         }
       }
     },
     s_13: {
-      skill_name: "SPEAR SHOT",
+      skill_name: "火力狙击",
       cd: "16",
-      description:
-        "Stab the spear that deals [ ] damage, charges fire power on the spear, and pulling the enemy []. Once the caster reaches max charge level, the caster shoots [ ] the enemy and knock the enemy back ",
-      additional_effects: "Incapacitate [low], Penetration level 1, backattack",
+      description: "刺穿并拉着目标，最大冲量射杀并击退目标 ",
+      additional_effects: "行动力[低]，穿透等级1，反击",
       time: "",
       icon: "bU9RiX7.png",
       tripod_lvl1: {
         e_1: {
-          effect_name: "Quick Response",
-          description: "Decreases the skill cooldown by 3 seconds. ",
+          effect_name: "快速准备",
+          description: "技能CD减少3秒 ",
           icon: "DXzNTSi.png"
         },
         e_2: {
-          effect_name: "Swift Movement",
-          description: "Increase attack speed by 15%. ",
-          icon: "Tripod_Tier_1_6.png"
+          effect_name: "攻击速度",
+          description: "攻击速度提升15% ",
+          icon:
+            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_1_6.png"
         },
         e_3: {
-          effect_name: "Toughness",
-          description:
-            "The caster becomes Invulnerable to crowd control effects while performing the skill. ",
-          icon: "Tripod_Tier_1_23.png"
+          effect_name: "坚韧",
+          description: "释放技能时无法被群控 ",
+          icon:
+            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_1_23.png"
         }
       },
       tripod_lvl2: {
         e_1: {
-          effect_name: "Improved Strike",
-          description: "Increases damage done by 25%. ",
-          icon: "45.png"
+          effect_name: "伤害增加",
+          description: "伤害提升25%. ",
+          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/45.png"
         },
         e_2: {
-          effect_name: "Spot Weakness",
-          description:
-            "Increases the damage dealt to targets with the Invulnerable status by 40%. ",
-          icon: "36.png"
+          effect_name: "弱点",
+          description: "使目标无敌状态下受到伤害提升40%. ",
+          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/36.png"
         },
         e_3: {
-          effect_name: "Improved Penetration",
-          description: "Increases the penetration level by 1. ",
-          icon: "26.png"
+          effect_name: "穿透",
+          description: "穿透等级提升1 ",
+          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/26.png"
         }
       },
       tripod_lvl3: {
         e_1: {
-          effect_name: "Explosive Spear",
-          description:
-            "Rushes 4m in front of you and causes an explosion that deals 40% increased damage. ",
-          icon: "19.png"
+          effect_name: "源火",
+          description: "冲刺400米爆炸造成40%伤害",
+          icon: "/wp-content/themes/modernize/tripod_icon/lvl_3/19.png"
         },
         e_2: {
-          effect_name: "Explosion",
-          description:
-            "This skill can be charged multiple times. Second and Third charge levels add extra attacks that deal 25% and 105% increased damage, but first charge level lowers damage taken by 20% ",
-          icon: "38.png"
+          effect_name: "爆炸",
+          description: "可多次充能，并造成25%和105%的伤害，1级伤害降低20% ",
+          icon: "/wp-content/themes/modernize/tripod_icon/lvl_3/38.png"
         }
       }
     },
     s_14: {
-      skill_name: "Counter Spear",
+      skill_name: "坚守阵地",
       cd: "24",
       description:
-        "Raise your shield to defend yourself from any harmful attack in front of you for 2 seconds. Absorbs damage by an amount equal to your maximum health. Successfully defending for 1 second grants a counter attack on the enemy which deals [] damage and knocks them back ",
+        "防御2秒吸收最大生命值伤害，成功防御1秒可反击对目标造成伤害 ",
       additional_effects:
         "Incapacitate [Mid-High], Immune [stiffness], Penetration  [level 1], Back Attack",
       type: "Tap",
@@ -803,184 +742,175 @@ module.exports = {
       icon: "zoJM0Cu.png",
       tripod_lvl1: {
         e_1: {
-          effect_name: "Offensive Preparation",
-          description:
-            "A successful counter hit grants a 15% damage increase for 4 seconds. ",
-          icon: "Tripod_Tier_1_50.png"
+          effect_name: "棘反",
+          description: "反击使伤害提升15%，持续4秒 ",
+          icon:
+            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_1_50.png"
         },
         e_2: {
-          effect_name: "Improved Armor",
-          description:
-            "Gain a 30% damage reduction bonus while you are performing the skill. ",
-          icon: "Tripod_Tier_1_25.png"
+          effect_name: "进阶护甲",
+          description: "被击中获得30%伤害减免 ",
+          icon:
+            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_1_25.png"
         },
         e_3: {
-          effect_name: "Incapacitate",
-          description:
-            "A successful counter hit increases incapacitate point by 10%. ",
-          icon: "0.png"
+          effect_name: "制动",
+          description: "反击使目标降低10%行动力 ",
+          icon: "/wp-content/themes/modernize/tripod_icon/lvl_1/56.png"
         }
       },
       tripod_lvl2: {
         e_1: {
-          effect_name: "Quick Response",
-          description:
-            "Decreases the skill cooldown by 12 seconds and but reduces the damage dealt by 50%. ",
-          icon: "Tripod_Tier_2_56.png"
+          effect_name: "急速",
+          description: "减少技能CD12秒，伤害减少50% ",
+          icon:
+            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_2_56.png"
         },
         e_2: {
-          effect_name: "Improved Strike",
-          description: "Increases damage by 15%. ",
-          icon: "45.png"
+          effect_name: "伤害增加",
+          description: "伤害提升15%. ",
+          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/45.png"
         },
         e_3: {
-          effect_name: "Spot Weakness",
-          description:
-            "Increases the damage dealt to targets with the Invulnerable status by 40%. ",
-          icon: "36.png"
+          effect_name: "弱点",
+          description: "使目标无敌状态下受到伤害提升40%. ",
+          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/36.png"
         }
       },
       tripod_lvl3: {
         e_1: {
-          effect_name: "Bombardment",
-          description:
-            "A successful counter hit grants an extra artillery hit which deals 50% increased damage on the target. ",
-          icon: "43.png"
+          effect_name: "轰炸",
+          description: "成功反击增加额外火炮命中，对目标造成50%伤害",
+          icon: "/wp-content/themes/modernize/tripod_icon/lvl_3/43.png"
         },
         e_2: {
-          effect_name: "Lightning Spear",
-          description:
-            "A successful counter hit grants an extra attack with the spear. The attack deals magical damage instead of physical and knocks the target down. The target is also inflicted with an electric shock for 4 seconds. ",
-          icon: "14.png"
+          effect_name: "先祖之力",
+          description: "成功反击造成4秒电击魔法伤害并击倒目标",
+          icon: "/wp-content/themes/modernize/tripod_icon/lvl_3/14.png"
         }
       }
     },
     s_15: {
-      skill_name: "Strength of Nellasia",
+      skill_name: "天选者",
       cd: "60",
-      description:
-        "Grants all party members within 22m a 15% damage reduction buff for 12 seconds   ",
+      description: "22米范围内获得15%伤害减免，持续12秒  ",
       additional_effects: "",
       type: "Tap",
       time: "",
       icon: "dn2HzSe.png",
       tripod_lvl1: {
         e_1: {
-          effect_name: "Charge speed",
-          description: "Increases the charge speed by 20%   ",
-          icon: "Tripod_Tier_1_11.png"
+          effect_name: "特斯拉",
+          description: "充电速度提升20%   ",
+          icon:
+            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_1_11.png"
         },
         e_2: {
-          effect_name: "Mind Enhancement",
-          description: "Decrease MP consumption by 50%   ",
-          icon: "Tripod_Tier_1_34.png"
+          effect_name: "智力",
+          description: "MP消耗减少50%   ",
+          icon:
+            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_1_34.png"
         },
         e_3: {
-          effect_name: "Quick Preparation",
-          description: "Decreases skill cooldown by 10 seconds   ",
-          icon: "Tripod_Tier_1_56.png"
+          effect_name: "快速准备",
+          description: "技能CD减少10秒  ",
+          icon:
+            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_1_56.png"
         }
       },
       tripod_lvl2: {
         e_1: {
-          effect_name: "Leadership",
-          description:
-            "Increases the attack power of all party members by 20% for 6 seconds   ",
-          icon: "45.png"
+          effect_name: "先驱",
+          description: "所有队员攻击强度提升20%，持续6秒  ",
+          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/45.png"
         },
         e_2: {
-          effect_name: "Cleanse",
-          description:
-            "Cleanses all party members, removing one harmful effect   ",
-          icon: "0.png"
+          effect_name: "饶恕",
+          description: "清除所有队员一种DBUFF  ",
+          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/0.png"
         },
         e_3: {
-          effect_name: "Prolonged Effect",
-          description: "Increases the duration of the effect by 4 seconds   ",
-          icon: "29.png"
+          effect_name: "加持",
+          description: "增加效果持续时间4秒   ",
+          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/29.png"
         }
       },
       tripod_lvl3: {
         e_1: {
-          effect_name: "Improved Effect",
-          description: "Increases the damage reduction by an additional 15%   ",
-          icon: "12.png"
+          effect_name: "进阶护甲",
+          description: "伤害减少15%   ",
+          icon: "/wp-content/themes/modernize/tripod_icon/lvl_3/12.png"
         },
         e_2: {
-          effect_name: "Survivability ",
+          effect_name: "护盾 ",
           description:
-            "Creates a protective shield on all party members which absorbs damage equal to 15% of their maximum health. The shield lasts for 5 seconds   ",
-          icon: "18.png"
+            "为所有队员制造一个可吸收各自最大生命值15%的护盾，持续5秒   ",
+          icon: "/wp-content/themes/modernize/tripod_icon/lvl_3/18.png"
         }
       }
     },
     s_16: {
-      skill_name: "Thunderbolt of Guardian",
+      skill_name: "雷击",
       cd: "20",
-      description:
-        "Hurls lightning from the sky, damaging enemies within 5m for [ ] and shocking them for 3  seconds.       ",
+      description: "闪电对5米范围内目标造成3秒伤害",
       additional_effects: "Incapacitate [mid-high]",
       time: "",
       icon: "ZETWIG7.png",
       tripod_lvl1: {
         e_1: {
-          effect_name: "Controlling Mana",
-          description:
-            "Grants a 20%  chance to ignore mana consumption.       ",
-          icon: "Tripod_Tier_1_34.png"
+          effect_name: "智者",
+          description: "20%几率不消耗MP     ",
+          icon:
+            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_1_34.png"
         },
         e_2: {
-          effect_name: "Unstoppable",
-          description:
-            "Successful hits have a 20%  chance to reset the cooldown.       ",
-          icon: "Tripod_Tier_1_51.png"
+          effect_name: "势不可挡",
+          description: "攻击目标有20%几率重置技能冷却时间      ",
+          icon:
+            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_1_51.png"
         },
         e_3: {
-          effect_name: "Lucky Strike",
-          description:
-            "Adds an extra lightning hit which deals 80%  of the normal damage.       ",
-          icon: "Tripod_Tier_1_17.png"
+          effect_name: "幸运",
+          description: "增加额外的闪电击中造成80%的正常伤害       ",
+          icon:
+            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_1_17.png"
         }
       },
       tripod_lvl2: {
         e_1: {
-          effect_name: "Toughness",
-          description:
-            "The caster becomes Invulnerable to crowd control effects while performing the skill.       ",
-          icon: "60.png"
+          effect_name: "坚韧",
+          description: "释放技能时无法被群控       ",
+          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/60.png"
         },
         e_2: {
-          effect_name: "Improved Strike",
-          description: "Increases damage by 25%.       ",
-          icon: "45.png"
+          effect_name: "伤害增加",
+          description: "伤害提升25%.       ",
+          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/45.png"
         },
         e_3: {
-          effect_name: "Drillmaster",
-          description: "Increases the area of effect by 20%.       ",
-          icon: "49.png"
+          effect_name: "覆盖",
+          description: "技能范围增加20%.       ",
+          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/49.png"
         }
       },
       tripod_lvl3: {
         e_1: {
-          effect_name: "Massive Thunderbolt",
-          description:
-            "Thunderbolts stretch out to four directions after hitting the ground, dealing 50%  increased damage.       ",
-          icon: "31.png"
+          effect_name: "雷霆",
+          description: "雷电区域打击造成伤害提升50%  ",
+          icon: "/wp-content/themes/modernize/tripod_icon/lvl_3/31.png"
         },
         e_2: {
-          effect_name: "Electric Shock",
-          description:
-            "Increases the duration of the electric shock by 3 seconds.       ",
-          icon: "27.png"
+          effect_name: "静电",
+          description: "增加3秒电击持续时间   ",
+          icon: "/wp-content/themes/modernize/tripod_icon/lvl_3/27.png"
         }
       },
       type: "Tap"
     },
     s_17: {
-      skill_name: "Burst Cannon",
+      skill_name: "爆震击",
       cd: "30",
-      description:
-        "Fires your cannon in front of you. When the burst gauge is fully charged, it deals [] damage your target and knocks them down. When not fully charged, it deals [] damage and pushes the target back.  ",
+      description: "满电击倒目标，未满击退  ",
       additional_effects:
         "incapacitate [extreme-high], destruction level 1, back attack",
       type: "Tap",
@@ -988,52 +918,51 @@ module.exports = {
       icon: "IFv21uC.png",
       tripod_lvl1: {
         e_1: {
-          effect_name: "Destruction",
-          description:
-            "A successful timing on the perfect zone increases the destruction level by 1.  ",
-          icon: "Tripod_Tier_1_22.png"
+          effect_name: "定时",
+          description: "成功定时破坏等级增加1  ",
+          icon:
+            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_1_22.png"
         },
         e_2: {
-          effect_name: "Quick Response",
-          description: "Decreases the skill cooldown by 5 seconds.  ",
-          icon: "Tripod_Tier_1_56.png"
+          effect_name: "快速准备",
+          description: "技能CD减少5秒",
+          icon:
+            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_1_56.png"
         },
         e_3: {
-          effect_name: "Toughness",
-          description:
-            "The caster becomes Invulnerable to crowd control effects while performing the skill.  ",
-          icon: "Tripod_Tier_1_23.png"
+          effect_name: "坚韧",
+          description: "释放技能时无法被群控  ",
+          icon:
+            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_1_23.png"
         }
       },
       tripod_lvl2: {
         e_1: {
-          effect_name: "Drill Master",
-          description: "Increases the area of effect by 15%.  ",
-          icon: "49.png"
+          effect_name: "覆盖",
+          description: "技能范围增加15%.  ",
+          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/49.png"
         },
         e_2: {
-          effect_name: "Improved Strike",
-          description: "Increases damage by 30%.  ",
-          icon: "45.png"
+          effect_name: "伤害增加",
+          description: "伤害提升30%.  ",
+          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/45.png"
         },
         e_3: {
-          effect_name: "Incapacitate",
-          description: "Increases the incapacitate point by 20%.  ",
-          icon: "31.png"
+          effect_name: "机动",
+          description: "机动增加20%.  ",
+          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/31.png"
         }
       },
       tripod_lvl3: {
         e_1: {
-          effect_name: "Rotating Bombardment",
-          description:
-            "Fires the cannon four times around you. Each shot deals 20% increased damage.  ",
-          icon: "19.png"
+          effect_name: "四面楚歌",
+          description: "向周围开炮4次，每次射击造成20%额外伤害 ",
+          icon: "/wp-content/themes/modernize/tripod_icon/lvl_3/19.png"
         },
         e_2: {
-          effect_name: "Concentrated Strike",
-          description:
-            "Fires your cannon four times into the front. Each shots deals 50% increased damage.  ",
-          icon: "35.png"
+          effect_name: "集中火力",
+          description: "向前方发射大炮4次，每次射击造成伤害增加50% ",
+          icon: "/wp-content/themes/modernize/tripod_icon/lvl_3/35.png"
         }
       }
     }
