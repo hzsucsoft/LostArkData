@@ -691,42 +691,42 @@ module.exports = {
           effect_name: "攻击速度",
           description: "攻击速度提升15% ",
           icon:
-            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_1_6.png"
+            "Tripod_Tier_1_6.png"
         },
         e_3: {
           effect_name: "坚韧",
           description: "释放技能时无法被群控 ",
           icon:
-            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_1_23.png"
+            "Tripod_Tier_1_23.png"
         }
       },
       tripod_lvl2: {
         e_1: {
           effect_name: "伤害增加",
           description: "伤害提升25%. ",
-          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/45.png"
+          icon: "45.png"
         },
         e_2: {
           effect_name: "弱点",
           description: "使目标无敌状态下受到伤害提升40%. ",
-          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/36.png"
+          icon: "36.png"
         },
         e_3: {
           effect_name: "穿透",
           description: "穿透等级提升1 ",
-          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/26.png"
+          icon: "26.png"
         }
       },
       tripod_lvl3: {
         e_1: {
           effect_name: "源火",
           description: "冲刺400米爆炸造成40%伤害",
-          icon: "/wp-content/themes/modernize/tripod_icon/lvl_3/19.png"
+          icon: "19.png"
         },
         e_2: {
           effect_name: "爆炸",
           description: "可多次充能，并造成25%和105%的伤害，1级伤害降低20% ",
-          icon: "/wp-content/themes/modernize/tripod_icon/lvl_3/38.png"
+          icon: "38.png"
         }
       }
     },
@@ -744,19 +744,17 @@ module.exports = {
         e_1: {
           effect_name: "棘反",
           description: "反击使伤害提升15%，持续4秒 ",
-          icon:
-            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_1_50.png"
+          icon:"Tripod_Tier_1_50.png"
         },
         e_2: {
           effect_name: "进阶护甲",
           description: "被击中获得30%伤害减免 ",
-          icon:
-            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_1_25.png"
+          icon:"Tripod_Tier_1_25.png"
         },
         e_3: {
           effect_name: "制动",
           description: "反击使目标降低10%行动力 ",
-          icon: "/wp-content/themes/modernize/tripod_icon/lvl_1/56.png"
+          icon: "Tripod_Tier_1_56.png"
         }
       },
       tripod_lvl2: {
@@ -764,29 +762,29 @@ module.exports = {
           effect_name: "急速",
           description: "减少技能CD12秒，伤害减少50% ",
           icon:
-            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_2_56.png"
+            "Tripod_Tier_2_56.png"
         },
         e_2: {
           effect_name: "伤害增加",
           description: "伤害提升15%. ",
-          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/45.png"
+          icon: "45.png"
         },
         e_3: {
           effect_name: "弱点",
           description: "使目标无敌状态下受到伤害提升40%. ",
-          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/36.png"
+          icon: "36.png"
         }
       },
       tripod_lvl3: {
         e_1: {
           effect_name: "轰炸",
           description: "成功反击增加额外火炮命中，对目标造成50%伤害",
-          icon: "/wp-content/themes/modernize/tripod_icon/lvl_3/43.png"
+          icon: "43.png"
         },
         e_2: {
           effect_name: "先祖之力",
           description: "成功反击造成4秒电击魔法伤害并击倒目标",
-          icon: "/wp-content/themes/modernize/tripod_icon/lvl_3/14.png"
+          icon: "14.png"
         }
       }
     },
@@ -803,49 +801,49 @@ module.exports = {
           effect_name: "特斯拉",
           description: "充电速度提升20%   ",
           icon:
-            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_1_11.png"
+            "Tripod_Tier_1_11.png"
         },
         e_2: {
           effect_name: "智力",
           description: "MP消耗减少50%   ",
           icon:
-            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_1_34.png"
+            "Tripod_Tier_1_34.png"
         },
         e_3: {
           effect_name: "快速准备",
           description: "技能CD减少10秒  ",
           icon:
-            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_1_56.png"
+            "Tripod_Tier_1_56.png"
         }
       },
       tripod_lvl2: {
         e_1: {
           effect_name: "先驱",
           description: "所有队员攻击强度提升20%，持续6秒  ",
-          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/45.png"
+          icon: "45.png"
         },
         e_2: {
           effect_name: "饶恕",
           description: "清除所有队员一种DBUFF  ",
-          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/0.png"
+          icon: "0.png"
         },
         e_3: {
           effect_name: "加持",
           description: "增加效果持续时间4秒   ",
-          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/29.png"
+          icon: "29.png"
         }
       },
       tripod_lvl3: {
         e_1: {
           effect_name: "进阶护甲",
           description: "伤害减少15%   ",
-          icon: "/wp-content/themes/modernize/tripod_icon/lvl_3/12.png"
+          icon: "12.png"
         },
         e_2: {
           effect_name: "护盾 ",
           description:
             "为所有队员制造一个可吸收各自最大生命值15%的护盾，持续5秒   ",
-          icon: "/wp-content/themes/modernize/tripod_icon/lvl_3/18.png"
+          icon: "18.png"
         }
       }
     },
@@ -861,48 +859,48 @@ module.exports = {
           effect_name: "智者",
           description: "20%几率不消耗MP     ",
           icon:
-            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_1_34.png"
+            "Tripod_Tier_1_34.png"
         },
         e_2: {
           effect_name: "势不可挡",
           description: "攻击目标有20%几率重置技能冷却时间      ",
           icon:
-            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_1_51.png"
+            "Tripod_Tier_1_51.png"
         },
         e_3: {
           effect_name: "幸运",
           description: "增加额外的闪电击中造成80%的正常伤害       ",
           icon:
-            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_1_17.png"
+            "Tripod_Tier_1_17.png"
         }
       },
       tripod_lvl2: {
         e_1: {
           effect_name: "坚韧",
           description: "释放技能时无法被群控       ",
-          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/60.png"
+          icon: "60.png"
         },
         e_2: {
           effect_name: "伤害增加",
           description: "伤害提升25%.       ",
-          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/45.png"
+          icon: "45.png"
         },
         e_3: {
           effect_name: "覆盖",
           description: "技能范围增加20%.       ",
-          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/49.png"
+          icon: "49.png"
         }
       },
       tripod_lvl3: {
         e_1: {
           effect_name: "雷霆",
           description: "雷电区域打击造成伤害提升50%  ",
-          icon: "/wp-content/themes/modernize/tripod_icon/lvl_3/31.png"
+          icon: "31.png"
         },
         e_2: {
           effect_name: "静电",
           description: "增加3秒电击持续时间   ",
-          icon: "/wp-content/themes/modernize/tripod_icon/lvl_3/27.png"
+          icon: "27.png"
         }
       },
       type: "Tap"
@@ -921,48 +919,48 @@ module.exports = {
           effect_name: "定时",
           description: "成功定时破坏等级增加1  ",
           icon:
-            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_1_22.png"
+            "Tripod_Tier_1_22.png"
         },
         e_2: {
           effect_name: "快速准备",
           description: "技能CD减少5秒",
           icon:
-            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_1_56.png"
+            "Tripod_Tier_1_56.png"
         },
         e_3: {
           effect_name: "坚韧",
           description: "释放技能时无法被群控  ",
           icon:
-            "/wp-content/themes/modernize/tripod_icon/lvl_1/Tripod_Tier_1_23.png"
+            "Tripod_Tier_1_23.png"
         }
       },
       tripod_lvl2: {
         e_1: {
           effect_name: "覆盖",
           description: "技能范围增加15%.  ",
-          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/49.png"
+          icon: "49.png"
         },
         e_2: {
           effect_name: "伤害增加",
           description: "伤害提升30%.  ",
-          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/45.png"
+          icon: "45.png"
         },
         e_3: {
           effect_name: "机动",
           description: "机动增加20%.  ",
-          icon: "/wp-content/themes/modernize/tripod_icon/lvl_2/31.png"
+          icon: "31.png"
         }
       },
       tripod_lvl3: {
         e_1: {
           effect_name: "四面楚歌",
           description: "向周围开炮4次，每次射击造成20%额外伤害 ",
-          icon: "/wp-content/themes/modernize/tripod_icon/lvl_3/19.png"
+          icon: "19.png"
         },
         e_2: {
           effect_name: "集中火力",
           description: "向前方发射大炮4次，每次射击造成伤害增加50% ",
-          icon: "/wp-content/themes/modernize/tripod_icon/lvl_3/35.png"
+          icon: "35.png"
         }
       }
     }
