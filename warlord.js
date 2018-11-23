@@ -44,8 +44,7 @@ module.exports = {
       tripod_lvl3: {
         e_1: {
           effect_name: "充能攻击",
-          description:
-            "可对技能进行充能，每次充能可造成50%、100%、250%点额外伤害，技能CD增加16秒",
+          description:"可对技能进行充能，每次充能可造成50%、100%、250%点额外伤害，技能CD增加16秒",
           icon: "dgg9J9i.png"
         },
         e_2: {
@@ -54,14 +53,14 @@ module.exports = {
           icon: "32F9lxY.png"
         }
       },
-      type: "Tap"
+      type: "单技"
     },
     s_2: {
       skill_name: "崛起之矛",
       cd: "12",
       description: "将长毛刺入地面并造成[x]点伤害.拔出长矛击飞敌人",
-      additional_effects: ["Incapacitate [medium]", "Back Attack"],
-      type: ["Tap"],
+      additional_effects: ["丧失行动力", "背后攻击"],
+      type: ["单技"],
       time: [""],
       icon: "MrAZpAV.png",
       tripod_lvl1: {
@@ -93,9 +92,9 @@ module.exports = {
           icon: "cXMAUIN.png"
         },
         e_3: {
-          effect_name: "Ground Collapsing",
+          effect_name: "地面崩塌",
           description:
-            "Immediately fires a launcher after the upward strike and damages enemies for an additional 40%. Decreases movement speed by 40% instead of lifting your enemies",
+            "向上攻击降低目标40%移动速度并造成40%伤害",
           icon: "C42y0cZ.png"
         }
       },
@@ -167,14 +166,14 @@ module.exports = {
           icon: "bjbQ0Fr.png"
         }
       },
-      type: "Tap"
+      type: "单技"
     },
     s_4: {
       skill_name: "盾击",
       cd: "16",
       description: "使用盾牌对目标造成 [x]点伤害. 再次使用造成[x]点伤害",
-      additional_effects: ["Incapacitate [high]"],
-      type: ["Combo"],
+      additional_effects: ["致残"],
+      type: ["连技"],
       time: [""],
       icon: "DwB8YCC.png",
       tripod_lvl1: {
@@ -228,7 +227,7 @@ module.exports = {
       skill_name: "眩晕",
       cd: "10",
       description: "盾击对目标造成3秒眩晕状态",
-      additional_effects: "Incapacitate [Mid-High]",
+      additional_effects: "瘫痪",
       time: "",
       icon: "eemdICW.png",
       tripod_lvl1: {
@@ -277,19 +276,19 @@ module.exports = {
           icon: "0BMcHYE.png"
         }
       },
-      type: "Tap"
+      type: "单技"
     },
     s_6: {
       skill_name: "冲天击",
       cd: "16",
       description:
-        "冲击目标，击飞造成[]伤害，大炮造成[]伤害，对空中目标造成额外[]伤害",
+        "冲击目标，击飞造成X伤害，大炮造成X伤害，对空中目标造成额外X伤害",
       additional_effects: [
-        "Incapacitate [Mid-High]",
-        " Destruction [Level 1]",
-        " Back Attack"
+        "瘫痪",
+        " 毁灭",
+        " 背部攻击"
       ],
-      type: ["Combo"],
+      type: ["组合技"],
       time: [""],
       icon: "WZpkynC.png",
       tripod_lvl1: {
@@ -343,7 +342,7 @@ module.exports = {
       skill_name: "跳跃打击",
       cd: "16",
       description: "跳跃至目标位置并造成 [ ]点伤害 ",
-      additional_effects: "Incapacitate [medium]",
+      additional_effects: "瘫痪",
       time: "",
       icon: "11ue7yB.png",
       tripod_lvl1: {
@@ -392,13 +391,13 @@ module.exports = {
           icon: "0.png"
         }
       },
-      type: "Point"
+      type: "组合技"
     },
     s_8: {
       skill_name: "谴责",
       cd: "12",
       description: "盾牌攻击降低目标20%移动、攻击速度，持续4秒   ",
-      additional_effects: "Incapacitate [medium]",
+      additional_effects: "瘫痪",
       time: "",
       icon: "LEtHD1y.png",
       tripod_lvl1: {
@@ -448,14 +447,14 @@ module.exports = {
           icon: "FpXyekj.png"
         }
       },
-      type: "Tap"
+      type: "单技"
     },
     s_9: {
       skill_name: "无情链钩",
       cd: "24",
-      description: "向目标投掷链钩拉回造成 [] 点伤害",
-      additional_effects: ["Incapacitate [low]"],
-      type: ["Tap"],
+      description: "向目标投掷链钩拉回造成X点伤害",
+      additional_effects: ["瘫痪"],
+      type: ["单技"],
       time: [""],
       icon: "SG0dbgp.png",
       tripod_lvl1: {
@@ -508,9 +507,9 @@ module.exports = {
     s_10: {
       skill_name: "冲锋陷阵",
       cd: "16",
-      description: "使用盾牌向前冲锋将目标击退，并造成[]点伤害 ",
-      additional_effects: "Incapacitate [high], Immune [stiffness]",
-      type: "Hold",
+      description: "使用盾牌向前冲锋将目标击退，并造成X点伤害 ",
+      additional_effects: "使其瘫痪，免疫僵直",
+      type: "坚守",
       time: " 2 sec",
       icon: "R0rX5GV.png",
       tripod_lvl1: {
@@ -561,15 +560,15 @@ module.exports = {
       }
     },
     s_11: {
-      skill_name: "Charge Stinger",
+      skill_name: "深入充能",
       cd: "30",
       description: "",
       additional_effects: [
-        "Incapacitate [Mid-High]",
-        " Penetration  [level 1]",
-        " Back Attack"
+        "瘫痪",
+        " 穿透1级",
+        " 背部攻击"
       ],
-      type: ["Charge"],
+      type: ["充能"],
       time: [""],
       icon: "5GxiOTq.png",
       tripod_lvl1: {
@@ -622,9 +621,9 @@ module.exports = {
     s_12: {
       skill_name: "听我号令",
       cd: "30",
-      description: "8米范围内最多对12个目标造成[]点伤害并嘲讽2秒",
-      additional_effects: [""],
-      type: ["Tap"],
+      description: "8米范围内最多对12个目标造成X点伤害并嘲讽2秒",
+      additional_effects: ["护盾，攻击精进"],
+      type: ["单技"],
       time: [""],
       icon: "2Qdyzfj.png",
       tripod_lvl1: {
@@ -646,7 +645,7 @@ module.exports = {
       },
       tripod_lvl2: {
         e_1: {
-          effect_name: "Intimidation",
+          effect_name: "威胁",
           description: "降低目标30%防御力，持续4秒",
           icon: "ktJIUvL.png"
         },
@@ -678,7 +677,7 @@ module.exports = {
       skill_name: "火力狙击",
       cd: "16",
       description: "刺穿并拉着目标，最大冲量射杀并击退目标 ",
-      additional_effects: "行动力[低]，穿透等级1，反击",
+      additional_effects: "瘫痪，穿透等级1，反击",
       time: "",
       icon: "bU9RiX7.png",
       tripod_lvl1: {
@@ -736,8 +735,8 @@ module.exports = {
       description:
         "防御2秒吸收最大生命值伤害，成功防御1秒可反击对目标造成伤害 ",
       additional_effects:
-        "Incapacitate [Mid-High], Immune [stiffness], Penetration  [level 1], Back Attack",
-      type: "Tap",
+        "使其瘫痪，免疫僵直，穿透，背部攻击",
+      type: "单技",
       time: "",
       icon: "zoJM0Cu.png",
       tripod_lvl1: {
@@ -793,7 +792,7 @@ module.exports = {
       cd: "60",
       description: "22米范围内获得15%伤害减免，持续12秒  ",
       additional_effects: "",
-      type: "Tap",
+      type: "单技",
       time: "",
       icon: "dn2HzSe.png",
       tripod_lvl1: {
@@ -851,7 +850,7 @@ module.exports = {
       skill_name: "雷击",
       cd: "20",
       description: "闪电对5米范围内目标造成3秒伤害",
-      additional_effects: "Incapacitate [mid-high]",
+      additional_effects: "瘫痪",
       time: "",
       icon: "ZETWIG7.png",
       tripod_lvl1: {
@@ -910,7 +909,7 @@ module.exports = {
       cd: "30",
       description: "满电击倒目标，未满击退  ",
       additional_effects:
-        "incapacitate [extreme-high], destruction level 1, back attack",
+        "使其瘫痪，破坏等级1，背部攻击",
       type: "Tap",
       time: "",
       icon: "IFv21uC.png",
